@@ -4,8 +4,8 @@
 # pylint: disable=missing-function-docstring
 
 
-# def fibonacci(n: int):
-#     pass
+def fibonacci(n: int):
+    pass
 
 
 
