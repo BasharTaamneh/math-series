@@ -5,7 +5,4 @@
 
 
 def fibonacci(n: int):
-    pass
-
-
-
+    return n
