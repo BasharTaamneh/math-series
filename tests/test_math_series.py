@@ -136,3 +136,16 @@ def test_it_return_nth_value_in_lucas_sum_series_1():
         num_sum_series, X_optional_arguments, Y_optional_arguments)
     # Assert
     assert actual_sum_series == expected_sum_series
+
+
+def test_it_return_nth_value_in_lucas_sum_series_2():
+    # Arrange
+    num_sum_series = 1
+    expected_sum_series = 3
+    X_optional_arguments = 2
+    Y_optional_arguments = 1
+    # Act
+    actual_sum_series = sum_series(
+        num_sum_series, X_optional_arguments, Y_optional_arguments)
+    # Assert
+    assert actual_sum_series == expected_sum_series
