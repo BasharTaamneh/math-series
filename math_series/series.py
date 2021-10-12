@@ -24,11 +24,12 @@ def fibonacci(n: int) -> int:
 
 def lucas(n: int) -> int:
     '''
-    The Fibonacci Series is a numeric series starting with the integers 0 and 1.
+    The Lucas Numbers are a related series of integers,
+        that start with the values 2 and 1 rather than 0 and 1.
         In this series, the next integer is determined by summing the previous two integers.
-        This gives us: (n)=6, (nth_value)=[0, 1, 1, 2, 3, 5, 8, 13, ...]
-    the fibonacci function have one parameter (n).
-        so will return the nth value in the fibonacci series after checking that the parameter (n),
+        This gives us: (n)=6, (nth_value)=[2, 1, 3, 4, 7, 11, 18, 29, ...]
+    the Lucas function have one parameter (n).
+        so will return the nth value in the Lucas series after checking that the parameter (n),
         greater than or equal to zero.
     '''
     if n <= 0:
@@ -39,3 +40,7 @@ def lucas(n: int) -> int:
         lucas_numbers.append(nth_value)
     nth = lucas_numbers[len(lucas_numbers)-1]
     return nth
+
+
+def sum_series():
+    pass
