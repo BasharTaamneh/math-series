@@ -91,11 +91,11 @@ def test_it_return_nth_value_in_lucas_numbers_1():
     assert actual_lucas == expected_lucas
 
 
-def test_it_return_nth_value_in_lucas_numbers_1():
+def test_it_return_nth_value_in_fibonacci_sum_series():
     # Arrange
-    num_lucas = 0
-    expected_lucas = 2
+    num_sum_series = 0
+    expected_sum_series = 0
     # Act
-    actual_lucas = lucas(num_lucas)
+    actual_sum_series = sum_series(num_sum_series)
     # Assert
-    assert actual_lucas == expected_lucas
+    assert actual_sum_series == expected_sum_series

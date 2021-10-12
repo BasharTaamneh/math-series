@@ -46,3 +46,8 @@ def sum_series(n: int, x=0, y=1):
     series = [x, y]
     if n <= 0 and x == 0 and y == 1:
         return 0
+    for i in range(n):
+        nth_value = series[i] + series[i+1]
+        series.append(nth_value)
+    nth = series[len(series)-1]
+    return nth
