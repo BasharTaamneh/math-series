@@ -99,3 +99,13 @@ def test_it_return_nth_value_in_fibonacci_sum_series():
     actual_sum_series = sum_series(num_sum_series)
     # Assert
     assert actual_sum_series == expected_sum_series
+
+
+def test_it_return_nth_value_in_fibonacci_sum_series_1():
+    # Arrange
+    num_sum_series = 6
+    expected_sum_series = 13
+    # Act
+    actual_sum_series = sum_series(num_sum_series)
+    # Assert
+    assert actual_sum_series == expected_sum_series
