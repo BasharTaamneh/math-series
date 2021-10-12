@@ -37,3 +37,6 @@ python -m Modules_and_Testing.math_series
 - [x] Calling this function with no optional parameters will produce numbers from the fibonacci series. Calling it with the optional arguments 2 and 1 will produce values from the lucas numbers. Other values for the optional parameters will produce other series. Again, you may use recursion or iteration, or both. Again, ensure that your function has a well-formed docstring.
   
 - [x] Add /series.py and test_series.py modules to your repository and commit frequently while working on your implementation. Include good commit messages that explain concisely both what you are doing and why.
+
+**Live PR URL**
+[link](https://github.com/BasharTaamneh/math-series/pull/1)
