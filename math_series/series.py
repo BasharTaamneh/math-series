@@ -42,5 +42,7 @@ def lucas(n: int) -> int:
     return nth
 
 
-def sum_series():
-    pass
+def sum_series(n: int, x=0, y=1):
+    series = [x, y]
+    if n <= 0 and x == 0 and y == 1:
+        return 0

@@ -5,7 +5,7 @@
 from math_series import __version__
 from math_series.series import fibonacci
 from math_series.series import lucas
-
+from math_series.series import sum_series
 
 def test_version():
     assert __version__ == '0.1.0'
@@ -75,6 +75,16 @@ def test_it_return_nth_value_in_lucas_numbers():
     # Arrange
     num_lucas = 1
     expected_lucas = 3
+    # Act
+    actual_lucas = lucas(num_lucas)
+    # Assert
+    assert actual_lucas == expected_lucas
+
+
+def test_it_return_nth_value_in_lucas_numbers_1():
+    # Arrange
+    num_lucas = 0
+    expected_lucas = 2
     # Act
     actual_lucas = lucas(num_lucas)
     # Assert
