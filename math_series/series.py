@@ -31,11 +31,11 @@ def lucas(n: int) -> int:
         so will return the nth value in the fibonacci series after checking that the parameter (n),
         greater than or equal to zero.
     '''
-    # if n <= 0:
-    #     return 0
-    # fibonacci_sequence = [0, 1]
-    # for i in range(n):
-    #     nth_value = fibonacci_sequence[i] + fibonacci_sequence[i+1]
-    #     fibonacci_sequence.append(nth_value)
-    # nth = fibonacci_sequence[len(fibonacci_sequence)-1]
-    # return nth
+    if n <= 0:
+        return 2
+    lucas_numbers = [2, 1]
+    for i in range(n):
+        nth_value = lucas_numbers[i] + lucas_numbers[i+1]
+        lucas_numbers.append(nth_value)
+    nth = lucas_numbers[len(lucas_numbers)-1]
+    return nth
