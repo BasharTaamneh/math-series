@@ -7,6 +7,7 @@ from math_series.series import fibonacci
 from math_series.series import lucas
 from math_series.series import sum_series
 
+
 def test_version():
     assert __version__ == '0.1.0'
 
@@ -64,7 +65,7 @@ def test_it_return_nth_value_in_fibonacci_series_5():
 def test_it_return_nth_value_in_fibonacci_series_6():
     # Arrange
     num_fibonacci = 0
-    expected_fibonacci = 0
+    expected_fibonacci = 1
     # Act
     actual_fibonacci = fibonacci(num_fibonacci)
     # Assert
@@ -84,7 +85,7 @@ def test_it_return_nth_value_in_lucas_numbers():
 def test_it_return_nth_value_in_lucas_numbers_1():
     # Arrange
     num_lucas = 0
-    expected_lucas = 2
+    expected_lucas = 1
     # Act
     actual_lucas = lucas(num_lucas)
     # Assert
@@ -94,7 +95,7 @@ def test_it_return_nth_value_in_lucas_numbers_1():
 def test_it_return_nth_value_in_fibonacci_sum_series():
     # Arrange
     num_sum_series = 0
-    expected_sum_series = 0
+    expected_sum_series = 1
     # Act
     actual_sum_series = sum_series(num_sum_series)
     # Assert
@@ -107,5 +108,31 @@ def test_it_return_nth_value_in_fibonacci_sum_series_1():
     expected_sum_series = 13
     # Act
     actual_sum_series = sum_series(num_sum_series)
+    # Assert
+    assert actual_sum_series == expected_sum_series
+
+
+def test_it_return_nth_value_in_lucas_sum_series():
+    # Arrange
+    num_sum_series = 0
+    expected_sum_series = 1
+    X_optional_arguments = 2
+    Y_optional_arguments = 1
+    # Act
+    actual_sum_series = sum_series(
+        num_sum_series, X_optional_arguments, Y_optional_arguments)
+    # Assert
+    assert actual_sum_series == expected_sum_series
+
+
+def test_it_return_nth_value_in_lucas_sum_series_1():
+    # Arrange
+    num_sum_series = 6
+    expected_sum_series = 29
+    X_optional_arguments = 2
+    Y_optional_arguments = 1
+    # Act
+    actual_sum_series = sum_series(
+        num_sum_series, X_optional_arguments, Y_optional_arguments)
     # Assert
     assert actual_sum_series == expected_sum_series
